@@ -1,0 +1,669 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3e5d9;
+}
+
+
+/* header */
+
+nav {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    font-family: "nexaregular";
+    background-color: white;
+    height: 4em;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 1em 0em;
+}
+
+li {
+    float: left;
+    width: 30%;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 0.3rem 0.3rem;
+    width: 5rem;
+    height: 5rem;
+    color: #22d470;
+}
+
+ul li:first-of-type {
+    font: 0/0 a;
+    background: url(../images/transavia.logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 3rem;
+    height: 3rem;
+}
+
+ul li:nth-of-type(2) {
+    display: flex;
+    flex-basis: 80rem;
+}
+
+ul li:nth-of-type(4) {
+    font: 0/0 a;
+    background: url(../images/hartje.icoon.svg);
+    background-repeat: no-repeat;
+    background size: 1rem;
+    width: 4rem;
+    height: 5rem;
+}
+
+ul li:nth-of-type(5) {
+    font: 0/0 a;
+    background: url(../images/inloggen.svg);
+    background-repeat: no-repeat;
+    background size: 5rem;
+    width: 4rem;
+    height: 5rem;
+}
+
+/* bron: https://www.w3schools.com/howto/howto_css_animated_search.asp */
+
+li > input[type=text] {
+    width: 2em;
+    box-sizing: border-box;
+    border-width: medium;
+    border-color: #22d470;
+    border-style: solid;
+    border-radius: 4em;
+    font-size: 1em;
+    background-color: white;
+    background-image: url(../images/zoeken.icoon.svg);
+    background-position: 0.2em 0.6em;
+    background-repeat: no-repeat;
+    padding: 0.2em 0em 0.5em 2em;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 7.5em;
+}
+
+h1 {
+    font-family: "nexabold";
+    color: #29129d;
+}
+
+header > h1 {
+    margin: 3em 1em;
+}
+
+/* main */
+
+main {
+    padding: 1.1rem;
+    background-color: #f3e5d9;
+    margin-top: 5.5rem;
+}
+
+main > h1 {
+    margin-top: 4rem;
+}
+
+a {
+    text-decoration: none;
+    color: #22d470;
+}
+
+p a {
+    color: #5e45b5;
+    text-decoration: underline;
+}
+
+p a:hover {
+    color: #fc376a;
+}
+
+article {
+    margin: 7rem 0.5rem -5rem 0;
+    padding: 0 1rem 1.5rem 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: .75rem;
+}
+
+article a {
+    font-size: 1em;
+    font-family: "nexaregular";
+    background-color: #fc376a;
+    color: white;
+    border-radius: 3rem;
+    padding: 0.6em 1em;
+    box-shadow: 0px 1px 0px 1px rgb(208, 44, 87);
+}
+
+article a:hover {
+background-color: #fd678f;
+}
+
+  article img {
+    width: calc(100% + 2em);
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+    margin: -1rem 5rem 0 -1rem;
+}
+
+article button {
+    font: 0/0 a;
+    background-image: url(../images/comment.svg);
+    height: 5rem;
+    width: 5rem;
+}
+
+h2 {
+    font-family: "nexabold";
+    color: #22d470;
+    font-size: 1.2em;
+}
+
+p {
+    font-family: "nexaregular";
+}
+
+ main div img:first-of-type {
+    max-width: 110%;
+    margin: 0 -1em;
+     position: relative;
+}
+
+ main div img:nth-of-type(2) {
+     display: none;
+
+    }
+.tekeningen{
+   position: fixed;
+    max-width: 110%;
+    top: 5em;
+    left: 0em;
+}
+
+/* like button bron: https://css-tricks.com/recreating-the-twitter-heart-animation/ */
+
+/* checkbox verbergen */
+[id='toggle-heart'] {
+      position: absolute;
+      left: -100vw;
+
+}
+
+[for='toggle-heart'] {
+    font-size: 2em;
+    cursor: pointer;
+    color: #aab8c2;
+    margin: 0 1em;
+    transition: all 0.8s ease;
+}
+
+[id='toggle-heart']:checked + label {
+  color: #fc376a;
+}
+
+/* toggle heart 2 */
+[id='toggle-heart2'] {
+      position: absolute;
+      left: -100vw;
+
+}
+
+[for='toggle-heart2'] {
+    font-size: 2em;
+    cursor: pointer;
+    color: #aab8c2;
+    margin: 0 1em;
+    transition: all 0.8s ease;
+}
+
+[id='toggle-heart2']:checked + label {
+  color: #fc376a;
+}
+
+/* toggle heart 3 */
+[id='toggle-heart3'] {
+      position: absolute;
+      left: -100vw;
+
+}
+
+[for='toggle-heart3'] {
+    font-size: 2em;
+    cursor: pointer;
+    color: #aab8c2;
+    margin: 0 1em;
+    transition: all 0.8s ease;
+}
+
+[id='toggle-heart3']:checked + label {
+  color: #fc376a;
+}
+
+/* toggle heart 4 */
+[id='toggle-heart4'] {
+      position: absolute;
+      left: -100vw;
+
+}
+
+[for='toggle-heart4'] {
+    font-size: 2em;
+    cursor: pointer;
+    color: #aab8c2;
+    margin: 0 1em;
+    transition: all 0.8s ease;
+}
+
+[id='toggle-heart4']:checked + label {
+  color: #fc376a;
+}
+
+/* toggle heart 5 */
+[id='toggle-heart5'] {
+      position: absolute;
+      left: -100vw;
+
+}
+
+[for='toggle-heart5'] {
+    font-size: 2em;
+    cursor: pointer;
+    color: #aab8c2;
+    margin: 0 1em;
+    transition: all 0.8s ease;
+}
+
+[id='toggle-heart5']:checked + label {
+  color: #fc376a;
+}
+
+/* toggle heart 6 */
+[id='toggle-heart6'] {
+      position: absolute;
+      left: -100vw;
+
+}
+
+[for='toggle-heart6'] {
+    font-size: 2em;
+    cursor: pointer;
+    color: #aab8c2;
+    margin: 0 1em;
+    transition: all 0.8s ease;
+}
+
+[id='toggle-heart6']:checked + label {
+  color: #fc376a;
+}
+
+/* toggle heart 7 */
+[id='toggle-heart7'] {
+      position: absolute;
+      left: -100vw;
+
+}
+
+[for='toggle-heart7'] {
+    font-size: 2em;
+    cursor: pointer;
+    color: #aab8c2;
+    margin: 0 1em;
+    transition: all 0.8s ease;
+}
+
+[id='toggle-heart7']:checked + label {
+  color: #fc376a;
+}
+
+/* toggle heart 8 */
+[id='toggle-heart8'] {
+      position: absolute;
+      left: -100vw;
+
+}
+
+[for='toggle-heart8'] {
+    font-size: 2em;
+    cursor: pointer;
+    color: #aab8c2;
+    margin: 0 1em;
+    transition: all 0.8s ease;
+}
+
+[id='toggle-heart8']:checked + label {
+  color: #fc376a;
+}
+
+/* toggle heart 9 */
+[id='toggle-heart9'] {
+      position: absolute;
+      left: -100vw;
+
+}
+
+[for='toggle-heart9'] {
+    font-size: 2em;
+    cursor: pointer;
+    color: #aab8c2;
+    margin: 0 1em;
+    transition: all 0.8s ease;
+}
+
+[id='toggle-heart9']:checked + label {
+  color: #fc376a;
+}
+
+/* download toggle switch bron: https://codepen.io/charge-valtech/pen/sFzoi?page=1& */
+
+#toggle {
+  max-height: 0;
+  max-width: 0;
+  opacity: 0;
+margin: 1em;
+}
+
+#toggle + label {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  box-shadow: inset 0 0 0px 1px #d5d5d5;
+  text-indent: -5000px;
+  height: 30px; width: 50px;
+  border-radius: 15px;
+}
+
+#toggle + label:before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 30px; width: 30px;
+  top: 0; left: 0;
+  border-radius: 15px;
+  background: rgba(19,191,17,0);
+  transition: .25s ease-in-out;
+}
+
+#toggle + label:after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 30px; width: 30px;
+  top: 0; left: 0;
+  border-radius: 15px;
+  background: white;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.2), 0 2px 4px rgba(0,0,0,.2);
+  transition: .25s ease-in-out;
+}
+
+#toggle:checked + label:before {
+  width: 50px;
+  background: rgba(19,191,17,1);
+}
+
+#toggle:checked + label:after {
+  left: 20px;
+  box-shadow: inset 0 0 0 1px rgba(19,191,17,1), 0 2px 4px rgba(0,0,0,.2);
+}
+
+main section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: -6em 0;
+}
+
+/* form */
+
+form {
+    font-family: "nexaregular";
+    color: black;
+    border-radius: .75rem;
+}
+
+input {
+    display: block;
+    font-size: 1.2em;
+    background-color: white;
+    border-color: gray;
+    border-width: thin;
+    border-radius: .4rem;
+}
+
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
+
+input:valid {
+    transition: all 2s ease;
+    border-color: gray;
+}
+
+header > form {
+background-color: none;
+margin: -5em 2em;
+}
+
+form fieldset {
+    margin: 1rem 1rem;
+    border: none;
+    background-color: white;
+    opacity: none;
+    display: none;
+}
+
+header > form fieldset:first-of-type.active {
+        display: block;
+        border-radius: .75rem;
+}
+
+header > form fieldset:last-of-type.active {
+    display: block;
+    border-radius: .75rem;
+}
+
+header > form fieldset:hover {
+transform: scale(1.1);
+      transition: all 1s;
+}
+
+main > form fieldset {
+    display: block;
+    border-radius: .75rem;
+}
+
+button {
+    font-size: 1em;
+    font-family: "nexaregular";
+    background-color: #fc376a;
+    color: white;
+    border-radius: 3rem;
+    padding: 0.4em 1em;
+    box-shadow: 0px 1px 0px 1px rgb(208, 44, 87);
+    border: none;
+}
+
+button:hover {
+    background-color: #fd678f;
+}
+
+header > form button:last-of-type {
+    display: none;
+}
+
+header > form button:last-of-type.active {
+    display: block;
+}
+
+legend {
+    font-size: 0.9em;
+}
+
+/* eerste media query */
+
+@media (min-width: 40em) {
+
+    ul li:first-of-type {
+        display: none;
+    }
+
+    header div {
+        background-image: url(../images/transavia.jpg);
+        background-size: cover;
+        padding: 12rem;
+    }
+
+    header > h1 {
+        display: grid;
+        grid-row: 1;
+        grid-column: 1/3;
+        margin: 1em;
+        margin: 2em 1em;
+    }
+
+    header > form {
+        background-color: none;
+        margin: -1em 2em;
+}
+    form {
+        grid-row: 2;
+        grid-column: 1/3;
+    }
+
+    input[type=text]:focus {
+        width: 15em;
+}
+
+    main {
+        display: grid;
+        grid-template-rows: auto auto 1fr;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 5em;
+    }
+
+    main div img {
+        min-width: 220%;
+        margin-top: -2em;
+}
+
+    main div img:first-of-type {
+        display: none;
+    }
+
+     main div img:nth-of-type(2) {
+       display: block;
+    max-width: 100%;
+
+    }
+
+   .tekeningen {
+         min-width: 100%;
+        margin-top: 0em;
+    }
+
+    main form {
+        display: grid;
+        grid-template-columns: 0;
+    }
+
+    main button {
+        width: 6em;
+        height: 2em;
+    }
+
+    main section {
+        display: flex;
+        flex-direction: row;
+        grid-row: 1;
+        grid-column: 1/3;
+        margin: -6em 0;
+    }
+
+    article {
+        margin: -2rem 0.5rem 3rem;
+        padding: 0 1rem 1.5rem 1rem;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: .75rem;
+}
+
+    article img {
+        margin: 0 2rem 0 -1rem;
+        padding: 0;
+        border-top-left-radius: .75rem;
+        border-top-right-radius: .75rem;
+}
+    main button {
+margin-top: 330%;
+}
+
+}
+
+/* tweede media query */
+
+@media (min-width: 60em) {
+    main {
+        display: grid;
+        grid-template-rows: auto auto 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    header > h1 {
+        grid-row: 1;
+        grid-column: 1/4;
+    }
+
+    main form {
+        display: grid;
+        grid-template-columns: 0;
+
+    }
+
+    form {
+        grid-row: 2;
+        grid-column: 1/4;
+    }
+
+    main div img {
+        max-width: 309%;
+}
+    main div img:nth-of-type(2) {
+    max-width: 309%
+    }
+
+    .tekeningen {
+           max-width:60%;
+        max-height: 350%;
+    }
+
+    main button {
+        width: 6em;
+        height: 2em;
+        margin: 20em -50em;
+    }
+
+     main section {
+    margin: -6em 0;
+      grid-row: 1;
+        grid-column: 1/4;
+    }
+
+    main button {
+margin-top: 450%;
+        margin-left: 1em;
+}
+}
